@@ -40,9 +40,8 @@ h2 {
 }
 
 .obrazek img {
-    width: 350px;
-    height: 290px;
-    margin: 60px 75px 20px 75px;
+    max-width: 100%
+    /*margin: 60px 74px 20px 74px;*/
 }
 
 /*  nevím, jak mám dát na střed :(  */
@@ -50,7 +49,6 @@ h2 {
     background-color: #407BFF;
     width: 60px;
     height: 2px;
-    justify-content: center;
 }
 
 .sluzby-ck {
@@ -89,7 +87,7 @@ h2 {
  }
 
 
-/*  tlačítka - button  */
+/*  tlačítka  */
 
 .prvni {
     border-radius: 14px;
@@ -126,12 +124,88 @@ p {
     font-size: 16px;    
 }
   
-/*
+/* pro tablety*/
 @media screen and (min-width:640px) {
-  
+body {
+    width: 768px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
 }
 
+h2 {
+    margin-top: 80px;
+}
+.obrazek img {
+    margin: 60px 184px 20px 184px;
+}
+
+p {
+    width: 550px;
+    margin: 30px 109px;
+}
+
+.tlacitka {
+    display: flex;
+    width: 435px;
+    justify-content: center;
+    align-items: baseline;
+    margin: 41px 166px 40px 167px;
+}
+
+.prvni {
+    margin-right: 18px;
+}
+
+.ikony {
+    display: flex;
+    flex: auto;
+}
+
+.sluzby-ck,
+.sluzby-d {
+    width: 30%;
+    height: 170px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sluzby-ck p,
+.sluzby-d p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+}
+
+/* pro pc*/
 @media screen and (min-width:1100px) {
+
+body {
+    width: 1040px;
+}
+
+.box-a {
+    order: 2;
+}.box-b {
+    order: 1;
+}.box-c {
+    order: 4;
+}.box-d {
+    order: 3;
+}.box-e {
+    order: 6;
+}.box-f {
+    order: 5;
+}
+
+    /*
+    position: relative;
+    justify-content: center;
+    text-align: center;
     
 }
-*/
+
+.box-b {
+    display: flex;*/
+}
