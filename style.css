@@ -22,9 +22,11 @@ světle modrá ......... #407BFF1F
     font-family: 'Montserrat', sans-serif;
     background-color: #FAFAFA;
     width: 500px;
+    display: block;
     position: relative;
     justify-content: center;
     text-align: center;
+    
 }
 h1 {
     font-family: 'Montserrat, Medium', sans-serif;
@@ -41,7 +43,6 @@ h2 {
 
 .obrazek img {
     max-width: 100%
-    /*margin: 60px 74px 20px 74px;*/
 }
 
 /*  nevím, jak mám dát na střed :(  */
@@ -128,9 +129,6 @@ p {
 @media screen and (min-width:640px) {
 body {
     width: 768px;
-    position: relative;
-    justify-content: center;
-    text-align: center;
 }
 
 h2 {
@@ -183,29 +181,92 @@ p {
 
 body {
     width: 1040px;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+    .box-a {
+        order: 2;
+    }.box-b {
+        order: 1;
+    }.box-c {
+        order: 4;
+    }.box-d {
+        order: 3;
+    }.box-e {
+        order: 5;
+    }.box-f {
+        order: 6;
+    }
+
+/* první sekce */
 
 .box-a {
-    order: 2;
-}.box-b {
-    order: 1;
-}.box-c {
-    order: 4;
-}.box-d {
-    order: 3;
-}.box-e {
-    order: 6;
-}.box-f {
-    order: 5;
+    margin: 0 32px 80px 32px;
 }
-
-    /*
-    position: relative;
+.obrazek img {
+    width: 425px;
+    margin: 0;
     justify-content: center;
-    text-align: center;
-    
 }
 
 .box-b {
-    display: flex;*/
+    display: block;
+    text-align: left;
+    margin: 40px 0 40px 0;
+    width: 490px;
+    align-items: center;
+}
+.cara {
+    margin-bottom: 30px;
+}
+.odstavec {
+    margin: 0;
+    width: 430px;
+}
+
+.tlacitka {
+    justify-content: left;
+    margin: 41px 0 40px 0;
+}
+
+.box-a,
+.box-b {
+    display: block;
+}
+
+/* 
+prostřední sekce 
+
+Nevím, jak mám v této 
+sekci dát text zarovnaný na střed - rovnoběžně s ikonami :(
+*/
+
+.ikony {
+    margin: 0;
+}
+
+.box-c,
+.box-e {
+    width: 430px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+/* 
+spodní sekce 
+
+Nevím, jak mám v této 
+sekci dát text zarovnaný na střed - rovnoběžně s ikonami :(
+*/
+
+.box-d,
+.box-f {
+    width: 550px;
+    margin-bottom: 80px;
+    align-items: start;
+}
+
 }
